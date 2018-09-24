@@ -44,7 +44,7 @@ Answer:
 > scatterplotMatrix(~mpg+cyl+disp+hp+drat+wt+qsec+vs+am+carb|gear,
 +                   data=mtcars,lwd=3,pch=13)
 
-Scatterplot saved in GitHub ID: 
+Scatterplot saved in GitHub ID: https://github.com/Manishchugh79/DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session7Assignment7.2/7.2.2 Scatterplot Matrix by Gear Types
 
 3. Write a program to create a plot density by class variable.
 Answer:
@@ -52,7 +52,7 @@ Answer:
 > library(ggplot2)
 > mtcars%>%gather()%>%ggplot(aes(value))+facet_wrap(~key,scales = "free")+stat_density()
 
-Plot saved on GitHub ID: https://github.com/Manishchugh79/DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session7Assignment7.2
+Plot saved on GitHub ID: https://github.com/Manishchugh79/DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session7Assignment7.2/7.2.3 Plot Density by Class Variable
 
     Expected Output
 Not Applicable
