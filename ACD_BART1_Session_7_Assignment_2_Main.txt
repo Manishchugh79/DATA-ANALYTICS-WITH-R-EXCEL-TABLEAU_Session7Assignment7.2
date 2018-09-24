@@ -40,11 +40,32 @@ Not Applicable
 
 2. Create a scatterplot matrix by gear types in mtcars dataset.
 Answer:
-> library(car)
-> scatterplotMatrix(~mpg+cyl+disp+hp+drat+wt+qsec+vs+am+carb|gear,
-+                   data=mtcars,lwd=3,pch=13)
+(METHOD1)
 
-Scatterplot saved in GitHub ID: https://github.com/Manishchugh79/DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session7Assignment7.2/7.2.2 Scatterplot Matrix by Gear Types
+> library(car)
+
+> scatterplotMatrix(~mpg+cyl+disp+hp+drat+wt+qsec+vs+am+carb|gear,
+
+	+data=mtcars,lwd=3,pch=13)
+
+
+Scatterplot saved in GitHub ID: https://github.com/Manishchugh79/DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session7Assignment7.2/7.2.2 Scatterplot Matrix by Gear Types(Method1)
+
+(METHOD2)
+> par(mfrow=c(3,4))
+> plot(mtcars$gear, mtcars$mpg, xlab = 'Gear', ylab = 'Miles per Gallon', main = 'Gear V/s Miles per Gallon')
+> plot(mtcars$gear, mtcars$cyl, xlab = 'Gear', ylab = 'Cylinder', main = 'Gear V/s Cylinder')
+> plot(mtcars$gear, mtcars$disp, xlab = 'Gear', ylab = 'Displacement', main = 'Gear V/s Displacement')
+> plot(mtcars$gear, mtcars$hp, xlab = 'Gear', ylab = 'Horse Power', main = 'Gear V/s Horse Power')
+> plot(mtcars$gear, mtcars$drat, xlab = 'Gear', ylab = 'Rear Axle Ratio', main = 'Gear V/s Rear Axle Ratio')
+> plot(mtcars$gear, mtcars$wt, xlab = 'Gear', ylab = 'Weight', main = 'Gear V/s Weight')
+> plot(mtcars$gear, mtcars$qsec, xlab = 'Gear', ylab = 'Qrtr.miles per Sec.', main = 'Gear v/s Qrtr.miles per Sec.')
+> plot(mtcars$gear, mtcars$vs, xlab = 'Gear', ylab = 'VS', main = 'Gear v/s VS')
+> plot(mtcars$gear, mtcars$am, xlab = 'Gear', ylab = 'AM', main = 'Gear v/s AM')
+> plot(mtcars$gear, mtcars$carb, xlab = 'Gear', ylab = 'Carburetors', main = 'Gear v/s Carburetors')
+> 
+Scatterplot saved in GitHub ID: https://github.com/Manishchugh79/DATA-ANALYTICS-WITH-R-EXCEL-TABLEAU_Session7Assignment7.2/7.2.2 Scatterplot Matrix by Gear Types(Method2)
+
 
 3. Write a program to create a plot density by class variable.
 Answer:
